@@ -1,0 +1,8 @@
+Given a website, scrape hRecipe microformat (http://microformats.org/wiki/hrecipe) 
+information and stores it in a common format (plaintext or XML)
+
+This is intended to be a tool; recipes can be downloaded and stored in a common 
+format so that an app (perhaps a recipe notebook) can make use of them
+
+Example usage:
+ $ ./hrecipe_parse.py -u "http://www.bonappetit.com/recipes/2011/07/yogurt-marinated-grilled-chicken" -o yogurt-marinated-grilled-chicken.txt
