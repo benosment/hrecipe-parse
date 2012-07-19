@@ -11,7 +11,9 @@ common format (plaintext or XML)
 This is intended to be a tool; recipes can be downloaded and stored in a common 
 format so that an app (perhaps a recipe notebook) can make use of them
 
-Example: hRecipe_parse.py -u "http://www.bonappetit.com/recipes/2012/06/peach-blueberry-ice-cream-pie" -o "peach_blueberry_ice_cream_pie.xml"
+Example: hRecipe_parse.py 
+"http://www.bonappetit.com/recipes/2012/06/peach-blueberry-ice-cream-pie"
+"peach_blueberry_ice_cream_pie.xml"
 """
 
 import argparse
