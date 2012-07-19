@@ -4,8 +4,9 @@
 # Sun Jul  1 11:16:47 2012
 
 """
-Given a website, scrape hRecipe microformat (http://microformats.org/wiki/hrecipe) 
-information and stores it in a common format (plaintext or XML)
+Given a website, scrape hRecipe microformat (such as
+http://microformats.org/wiki/hrecipe) information and stores it in a 
+common format (plaintext or XML)
 
 This is intended to be a tool; recipes can be downloaded and stored in a common 
 format so that an app (perhaps a recipe notebook) can make use of them
