@@ -25,8 +25,8 @@ def hrecipe_parse(argv=[]):
     parser = argparse.ArgumentParser(description='Given a website, pulls hRecipe microformat '
                                      '(http://microformats.org/wiki/hrecipe) information '
                                      'and stores it in well-formed XML.')
-    parser.add_argument('-u', '--url', help='URL to parse')
-    parser.add_argument('-o', '--outfile', help='filename to write the XML result')
+    parser.add_argument('url', help='URL to parse')
+    parser.add_argument('outfile', help='filename to write the XML result')
     parser.add_argument('--dowload_pictures', action='store_true', help='Download any '
                         'associated pictures')
     parser.add_argument('--verbose', action='store_true')
@@ -36,11 +36,6 @@ def hrecipe_parse(argv=[]):
     global verbose
     verbose = args.verbose
 
-    if not args.url or not args.outfile:
-        print "Error: both URL and output file must be specified"
-        parser.print_help()
-        sys.exit()
-        
     hrecipes = review_scrape(args.url)
     if verbose:
         print "Successfully parsed %d recipes" % len(hrecipes)
